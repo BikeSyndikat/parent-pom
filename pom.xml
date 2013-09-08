@@ -17,11 +17,15 @@
     </scm>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id>ifbmarepository</id>
+            <name>ifbmarepository-snapshots</name>
+            <url>https://78.46.75.43:8181/artifactory/ext-snapshot-local</url>
+        </snapshotRepository>
         <repository>
-            <id>mylocalrepo</id>
-            <layout>default</layout>
-            <name>My local repository</name>
-            <url>file://${maven.repo.local}</url>
+            <id>ifbmarepository</id>
+            <name>ifbmarepository-releases</name>
+            <url>https://78.46.75.43:8181/artifactory/ext-release-local</url>
         </repository>
     </distributionManagement>
 
