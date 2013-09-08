@@ -11,4 +11,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <scm>
+        <developerConnection>scm:git:ssh://gitrepos@ifbma.org/~/ifbma-parent-pom</developerConnection>
+        <connection>scm:git:ssh://gitrepos@ifbma.org/~/ifbma-parent-pom</connection>
+        <tag>HEAD</tag>
+    </scm>
+
 </project>
