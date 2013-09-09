@@ -18,14 +18,14 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ifbmarepository</id>
+            <id>ifbma-snapshots</id>
             <name>ifbmarepository-snapshots</name>
-            <url>https://78.46.75.43:8181/artifactory/ext-snapshot-local</url>
+            <url>https://78.46.75.43:8181/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
         <repository>
-            <id>ifbmarepository</id>
+            <id>ifbma-central</id>
             <name>ifbmarepository-releases</name>
-            <url>https://78.46.75.43:8181/artifactory/ext-release-local</url>
+            <url>https://78.46.75.43:8181/artifactory/libs-release-local</url>
         </repository>
     </distributionManagement>
 
