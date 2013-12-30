@@ -10,7 +10,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.source.version>1.6</project.build.source.version>
         <project.build.target.version>1.6</project.build.target.version>
-        <checkstyle.version>2.10</checkstyle.version>
+        <checkstyle.version>2.11</checkstyle.version>
+        <release.version>2.4.2</release.version>
     </properties>
 
     <scm>
@@ -37,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.4.1</version>
+                <version>${release.version}</version>
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                     <pushChanges>true</pushChanges>
