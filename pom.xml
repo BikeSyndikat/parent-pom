@@ -12,6 +12,8 @@
         <project.build.target.version>1.6</project.build.target.version>
         <checkstyle.version>2.11</checkstyle.version>
         <release.version>2.4.2</release.version>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
 
     <scm>
