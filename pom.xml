@@ -33,6 +33,11 @@
             <name>ifbmarepository-releases</name>
             <url>https://dev.ifbma.org:8443/artifactory/libs-release-local</url>
         </repository>
+        <site>
+            <id>web</id>
+            <name>file local</name>
+            <url>file:///var/www/sites/${project.name}</url>
+        </site>
     </distributionManagement>
 
     <build>
