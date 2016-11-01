@@ -5,7 +5,7 @@
     </prerequisites>
     <groupId>org.ifbma</groupId>
     <artifactId>ifbma-parent-pom</artifactId>
-    <version>1.0.12-SNAPSHOT</version>
+    <version>1.1.0</version>
     <packaging>pom</packaging>
     <name>ifbmaParentPom</name>
 
@@ -30,7 +30,7 @@
     <scm>
         <developerConnection>scm:git:ssh://gitrepos@ifbma.org/~/ifbma-parent-pom</developerConnection>
         <connection>scm:git:ssh://gitrepos@ifbma.org/~/ifbma-parent-pom</connection>
-        <tag>HEAD</tag>
+        <tag>v1.1.0</tag>
     </scm>
 
     <distributionManagement>
