@@ -1,6 +1,8 @@
 node {
     // Mark the code checkout 'stage'....
     stage 'Checkout'
+    properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/BikeSyndikat/parent-pom/'], pipelineTriggers([])])
+
     // Get some code from a GitHub repository
     git branch: '', credentialsId: 'nelbrechtgithub', url: 'git@github.com:BikeSyndikat/parent-pom.git'
     // Clean any locally modified files and ensure we are actually on origin/master
