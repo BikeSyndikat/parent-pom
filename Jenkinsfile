@@ -1,5 +1,15 @@
 node {
-        git url: 'git@github.com:BikeSyndikat/parent-pom.git'
-        def mvnHome = tool 'maven-3.3.9'
-        sh "${mvnHome}/bin/mvn -B clean deploy site-deploy"
+        def mvnHome
+        stage('Preparation') {
+                git 'git@github.com:BikeSyndikat/parent-pom.git'
+                mvnHome = tool 'maven-3.3.9'
+        }
+        stage('Build') {
+                if (isUnix()) {
+                        sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+                }
+        }
+        stage('Results') {
+                archive 'pom.xml'
+        }
 }
